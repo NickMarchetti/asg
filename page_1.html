@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Data Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Viga" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(228, 228, 228);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a {
+            font-family: 'Viga', sans-serif;
+        }
+
+
+        p {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .center-block {
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+        }
+
+
+    </style>
+</head>
+
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><strong>All Star Data</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Plots
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="page_1.html">All Star Pct & Yearly Salary</a>
+                      <a class="dropdown-item" href="page_2.html">All Star Pct & Home Runs</a>
+                      <a class="dropdown-item" href="page_3.html">All Star Pct & ABs/HR</a>
+                      <a class="dropdown-item" href="page_4.html">All Star Pct & Batting Average</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!--Graph and Description-->
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-md-9 rounded pb-5">
+                <div class="col-md-12 bg-light rounded pb-2 pt-2">
+                    <h1 class="display-5 pb-2">Summary: All Stars & Yearly Salary</h1>
+
+                        <img class="center-block shadow-sm mb-4 bg-white rounded" src="Resources/assets/images/Fig1.png">
+
+                    <p>
+                        The scatterplot above shows Major League Baseball players' average annual salaries (1985-2015), and
+                        how often that player was selected to an All Star Game in that span.  In general, as a player's salary
+                        increases (as the player is considered more valuable), they are more likely to make it to the mid-summer
+                        classic. (Minimum 5 seasons played during this span, minimum 300 total at bats, only includes All Star selections,
+                        correlation coefficient = 0.414)
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3 rounded">
+                <div class="col-md-12 bg-light rounded pb-2 pt-3">
+                    <h2 class="display-5">Visualizations</h2>
+
+                    <a href="page_1.html" data-toggle="tooltip" data-placement="left" title="All Star Pct & Yearly Salary">
+                        <img class="shadow-sm mb-4 mt-2 bg-white rounded" src = "Resources/assets/images/Fig1.png" width="100%">
+                    </a>
+
+                    <a href="page_2.html" data-toggle="tooltip" data-placement="left" title="All Star Pct & Home Runs">
+                        <img class="shadow-sm mb-4 bg-white rounded" src = "Resources/assets/images/Fig2.png" width="100%">
+                    </a>
+
+                    <a href="page_3.html" data-toggle="tooltip" data-placement="left" title="All Star Pct & ABs/HR">
+                        <img class="shadow-sm mb-4 bg-white rounded" src = "Resources/assets/images/Fig3.png" width="100%">
+                    </a>
+
+                    <a href="page_4.html" data-toggle="tooltip" data-placement="left" title="All Star Pct & Batting Average">
+                        <img class="shadow-sm mb-4 bg-white rounded" src = "Resources/assets/images/Fig4.png" width="100%">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- Optional JavaScript -->
+                        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                            crossorigin="anonymous"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                            crossorigin="anonymous"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                            crossorigin="anonymous"></script>
+                            <script>
+                                    $(function () {
+                                        $('[data-toggle="tooltip"]').tooltip()
+                                    })
+                                </script>
+
+
+
+</body>
+
+
+
+</html>

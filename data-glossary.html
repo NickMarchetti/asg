@@ -38,6 +38,11 @@
     footer {
       background: rgb(99, 110, 119);
     }
+
+    #glossary {
+      font-size: 13px;
+
+    }
   </style>
 </head>
 
@@ -77,47 +82,41 @@
   </nav>
 
   <!--Graph and Description-->
-  <div class="container">
-    <br>
+  <div class="container bg-light rounded pb-3 mt-4 mb-5">
+    <h1 class="display-5 pb-1 pt-3">Data Glossary</h1>
     <div class="row">
-      <div class="col-md-9 rounded pb-5">
-        <div class="col-md-12 bg-light rounded pb-2 pt-2">
-          <h1 class="display-5 pb-2">Summary: All Stars & Yearly Salary</h1>
-
-          <img class="center-block shadow-sm mb-4 bg-white rounded" src="Resources/assets/images/Fig1.png">
-
-          <p>
-            The scatterplot above shows Major League Baseball players' average annual salaries (1985-2015), and
-            how often that player was selected to an All Star Game in that span. In general, as a player's salary
-            increases (as the player is considered more valuable), they are more likely to make it to the mid-summer
-            classic. (Minimum 5 seasons played during this span, minimum 300 total at bats, only includes All Star selections,
-            correlation coefficient = 0.414)
-          </p>
+        <div class="col-md-12 pb-1 pt-2 pr-2" id="glossary">
+            <p><u><strong>player_id:</strong></u>  individual player identification id</p>
+            <hr width="100%" size="8" align="center">
+            <p><u><strong>seasons:</strong></u>  number of seasons played (1985-2015)</p>
+            <hr width="100%" size="8" align="center">
+            <p><u><strong>all_star_seasons:</strong></u>  number of all star selections for player (1985-2015)</p>
+            <hr width="100%" size="8" align="center">
+            <p><u><strong>all_star_percent:</strong></u>  percentage of all star selections compared to number of seasons (1985-2015)</p>
+            <hr width="100%" size="8" align="center">
+            <p><u><strong>avg_yearly_salary:</strong></u>  average yearly salary player was paid (1985-2015)</p>
+            <hr width="100%" size="8" align="center">
+            <p><u><strong>abs_per_double:</strong></u>  numbers of at bats for player / number of doubles hit (1985-2015)</p>
+            <hr width="100%" size="8" align="center">
+            <p><u><strong>abs_per_sb:</strong></u>  numbers of at bats for player / number of stolen bases (1985-2015)</p>
+            <hr width="100%" size="8" align="center">
+            <p><u><strong>abs_per_so:</strong></u>  numbers of at bats for player / number of strike outs (1985-2015)</p>
+            <hr width="100%" size="8" align="center">
+            <p><u><strong>abs_per_bb:</strong></u>  numbers of at bats for player / number of walks (1985-2015)</p>
+            <hr width="100%" size="8" align="center">
+            <p><u><strong>batting_avg:</strong></u>  player's batting average (1985-2015)</p>
+            <hr width="100%" size="8" align="center">
+            <p><u><strong>abs_per_hr:</strong></u>  numbers of at bats for player / number of home runs hit (1985-2015)</p>
         </div>
-      </div>
 
-      <div class="col-md-3 rounded">
-        <div class="col-md-12 bg-light rounded pb-2 pt-2">
-          <h3><small>Visualizations</small></h3>
 
-          <a href="page_1.html" data-toggle="tooltip" data-placement="left" title="All Star Pct & Yearly Salary">
-            <img class="shadow-sm mb-4 mt-2 bg-white rounded" src="Resources/assets/images/Fig1.png" width="100%">
-          </a>
 
-          <a href="page_2.html" data-toggle="tooltip" data-placement="left" title="All Star Pct & Home Runs">
-            <img class="shadow-sm mb-4 bg-white rounded" src="Resources/assets/images/Fig2.png" width="100%">
-          </a>
-
-          <a href="page_3.html" data-toggle="tooltip" data-placement="left" title="All Star Pct & ABs/HR">
-            <img class="shadow-sm mb-4 bg-white rounded" src="Resources/assets/images/Fig3.png" width="100%">
-          </a>
-
-          <a href="page_4.html" data-toggle="tooltip" data-placement="left" title="All Star Pct & Batting Average">
-            <img class="shadow-sm mb-4 bg-white rounded" src="Resources/assets/images/Fig4.png" width="100%">
-          </a>
         </div>
       </div>
     </div>
+  </div>
+
+
 
     <!-- Footer -->
     <footer class="page-footer font-small">
